@@ -39,6 +39,68 @@ let stringNumber = String(someNumber)
 console.log(typeof(stringNumber));
 console.log(stringNumber);
 
+//*************Operations ******************* */
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+// console.log(2+2); plus
+// console.log(2-2);minus
+// console.log(2*2);mutiply
+// console.log(2**2);power
+// console.log(2/2);divide
+// console.log(2%3);remainder
+
+let str1 = "hello muazam"
+let str2 = "how are you"
+//simple string concatenation
+let str3 = str1 + str2
+console.log(str3);
+
+//string plus number 
+// console.log("1" + 2);//output 12
+// console.log(1 + "2");//output 12
+// console.log("1" + 2 + 2);//ouput 122
+// console.log(1 + 2 + "2");//ouput 32
+
+//For boolean 
+console.log(+true); // ouput 1
+console.log(+"");  //output 0
+
+
+//not a preferred way
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+// 
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter);
+
+// x++ and ++x prefix and postfix difference 
+let x = 3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
