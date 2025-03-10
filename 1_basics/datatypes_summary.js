@@ -59,3 +59,32 @@ const myFunction = function(){
 console.log(typeof(myFunction));//function
 
 myFunction() // ouput Hello World
+
+//******************************************************* */
+// Here we have two types of memory 
+// Stack used in all(Primitive datatypes), Heap used in all (Non-Premitive datatypes)
+// Whenever Stack memory is used it means you get a copy of the variable you have declare.
+// Whenever the Heap memory is used it means you get the refrence to the orignal values. 
+
+// Example of stack 
+let myName = "Muazam Qayyum Khan"//stores in stack
+let anotherName = myName // we get the copy of (myName) here 
+myName = "Muazam Qayyum"// Now we have done change in copy so the orignal value remain same. 
+
+console.log(myName);// Muazam Qayyum Khan 
+console.log(anotherName); // Muazam Qayyum
+
+
+// Example of Heap
+let userOne = {
+    useremail: "user@google.com",
+    userId : "23423"
+} // Here userOne variable giving the refrence to the value of object in heap 
+let userTwo = userOne; // we will the same refrence not the copy like premitive
+// lets change the value in user two 
+userTwo.useremail = "user@outlook" 
+console.log(userOne.useremail);//user@oulook 
+console.log(userTwo.useremail);//user@outlook // it is same as userOne because changes in the heap means change in the orignal value... 
+
+
+
