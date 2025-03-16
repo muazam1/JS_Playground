@@ -53,3 +53,33 @@ const users = [
 //users[1].email
 
 // Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). The only objects that don't inherit from Object.prototype are those with null prototype, or descended from other null prototype objects.
+
+
+// Destructuring of an object 
+const course = {
+    coursename : "js in detail",
+    price : "999",
+    courseinstructor : "Muazam"
+}
+//course.courseinstructor // not a preferred way 
+
+const {courseinstructor: instructor} = course // here we use destructure the object here
+console.log(instructor);//muazam
+
+// API concepts 
+// {
+//     "name" : "muazam",
+//     "coursename" : "js in detail",
+//     "price" : "freee"
+// }
+
+//Api mainly formated in object format  
+// when we call api from json what happens
+// it returns json file with the key value pairs 
+
+// sometime you may encountered api in array format 
+// [
+//     {},
+//     {},
+//     {}
+// ]
