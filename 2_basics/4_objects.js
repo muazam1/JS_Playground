@@ -42,6 +42,7 @@ obj3 = {...obj1, ...obj2}//spreading method
 console.log(obj3);
 
 
+
 // array of an object 
 const users = [
     {
@@ -51,3 +52,4 @@ const users = [
 ]
 //users[1].email
 
+// Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). The only objects that don't inherit from Object.prototype are those with null prototype, or descended from other null prototype objects.
