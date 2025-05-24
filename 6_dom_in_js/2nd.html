@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Thuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        
+    </div>
+</body>
+<script>
+    // Get the parent element
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+
+
+    //normal way to access the children of the parent element
+    // console.log(parent.children[1]);
+    // console.log(parent.children[2].innerHTML);
+
+
+    // You can print all the children of the parent element using a for loop
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    parent.children[1].style.color = "orange";
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const dayOne =  document.querySelector('.day');
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    // in nodes every element is a node and every element has its own significance.
+     console.log("NODES : ", parent.childNodes);
+    // console.log("ELEMENTS : ", parent.children);
+    // console.log("FIRST CHILD : ", parent.firstChild);
+</script>
+</html>
