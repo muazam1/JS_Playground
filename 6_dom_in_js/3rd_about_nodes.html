@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black;color:white ;">
+    
+</body>
+<script>
+    const div = document.createElement("div");
+    // this 
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10  + 1);
+    div.setAttribute("title", "This is a title");
+    div.style.color = "white";
+    div.style.backgroundColor = "green";
+    div.style.padding = "20px";
+    div.innerHTML = "<h1>DOM in JavaScript</h1>";
+    //this is another way of adding text like the innerHTML
+    // div.innerText = "Muazam learning DOM";
+    const addText = document.createTextNode("Muazam learning DOM");
+    div.append(addText);
+
+    document.body.appendChild(div);
+    // console.log(div);
+</script>
+</html>
